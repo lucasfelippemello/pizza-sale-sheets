@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends United</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><h1>Friends United</h1></li>
+            <li><h3>Pizza Friday</h3></li>
+        </ul>
+    </header>
+
+    <section>
+        <form>
+            <h3>Select the sold pizza</h3>
+            <ul>
+                <li><input type="radio" id="pepperoni" name="pizzas">
+                <label for="pepperoni">Pepperoni</label></li>
+                <li><input type="radio" id="mushrooms" name="pizzas">
+                <label for="mushrooms">Mushrooms</label></li>
+                <li><input type="radio" id="cheese" name="pizzas">
+                <label for="cheese">Cheese</label></li>
+            </ul>
+        </form>
+    </section>
+
+    <section>
+        <button id="sales">Sales</button><button id="chargeback">Chargeback</button>
+    </section>
+
+    <section id="table">
+        <table>
+            <tr>
+                <th>Topping</th><th>Amount</th><th>Price</th>
+            </tr>
+            <tr>
+                <td>Pepperoni</td><td id="resultPepp"></td><td id="salePepp"></td>
+            </tr>
+            <tr>
+                <td>Mushrooms</td><td id="resultMush"></td><td id="saleMush"></td>
+            </tr>
+            <tr>
+                <td>Cheese</td><td id="resultCheese"></td><td id="saleCheese"></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <button id="export">Sheet</button>
+    </section>
+
+    <script src="tableToExcel.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
